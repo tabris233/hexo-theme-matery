@@ -86,15 +86,15 @@ indexbtn:
   enable: true
   name: Github
   icon: fa-github-alt
-  url: https://github.com/blinkfox/hexo-theme-matery
+  url: https://github.com/tabris233
 
 # The configurations of the second line of home banner
 # icon/button will not show up if you leave the corresponding socialLink empty
 # 首页 banner 中的第二行个人信息配置，留空即不启用
 socialLink:
-  qq: 123123123
-  github:
-  email: xxx@xx.xx
+  qq: 604925267
+  github: https://github.com/tabris233
+  email: 604925267@qq.com
 
 # Whether to activate the Post TOC, and Configure which title types are supported by TOC support.
 # You can add `toc: false` to the Front-matter of a post to turn off the TOC.
@@ -102,7 +102,7 @@ socialLink:
 # 可以在某篇文章的 Front-matter 中再加上`toc: false`，使该篇文章关闭TOC目录功能
 toc:
   enable: true
-  heading: h2, h3, h4
+  heading: h1, h2, h3, h4, h5, h6
   showToggleBtn: true # 是否显示切换TOC目录展开收缩的按钮
 
 # Whether the code is broken.
@@ -114,16 +114,16 @@ code:
 reward:
   enable: true
   title: 你的赏识是我前进的动力
-  wechat: /medias/reward/wechat.png
+  wechat: /medias/reward/wechat.jpg
   alipay: /medias/reward/alipay.jpg
 
 # Whether to activate the copyright information of the blog and author when copying the post content.
 # minCharNumber: Approve copyright information by copying at least how many characters.
 # 是否激活复制文章时追加博客和作者的版权信息.
 copyright:
-  enable: false
+  enable: true
   minCharNumber: 120 # 至少复制多少个字符就追加版权信息.
-  description: 本文章著作权归作者所有，任何形式的转载都请注明出处。
+  description: 本文章著作权归作者(tabris)所有，任何形式的转载都请注明出处。
 
 # Whether to activate the mathjax, this is a global configuration, but the post still does not open the mathjax rendering.
 # Considering that the mathjax loading is time consuming,
@@ -131,7 +131,7 @@ copyright:
 # 是否激活mathjax数学公式，这是全局配置，但文章仍然不会都开启mathjax渲染，
 # 考虑到mathjax加载比较耗时，你还需要在需要渲染的文章的Front-matter中再加上`mathjax: true`才行.
 mathjax:
-  enable: false
+  enable: true
   cdn: https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 
 # Post word count, reading duration, site total word count.
@@ -140,7 +140,7 @@ mathjax:
 # 文章字数统计、阅读时长、总字数统计
 # 激活前请确认你已经安装了 hexo-wordcount 插件，安装命令: `npm i --save hexo-wordcount`
 wordCount:
-  enable: false
+  enable: true
   postWordCount: true
   min2read: true
   totalCount: true
@@ -148,7 +148,7 @@ wordCount:
 # Whether to activate the 'love' effect of clicking on the page.
 # 是否激活点击页面的'爱心'效果，默认激活.
 clicklove:
-  enable: true
+  enable: false
 
 # profile in about page, including avatars, career, and personal introductions.
 # 在”关于”页面中配置个人信息，包括头像、职业和个人介绍.
@@ -163,21 +163,21 @@ profile:
 myProjects:
   enable: true
   data:
-    hexo-theme-matery:
+    template:
       icon: fa-meetup
       iconBackground: 'linear-gradient(to bottom right, #66BB6A 0%, #81C784 100%)'
-      url: http://github.com/blinkfox/hexo-theme-matery
-      desc: This is a Hexo blog theme with 'Material Design' and responsive design.
-    zealt:
+      url: http://github.com/tabris233/template
+      desc: This is a Algorithm template for acm/*cpc
+    csdn2hexo:
         icon: fa-database
         iconBackground: 'linear-gradient(to bottom right, #F06292 0%, #EF5350 100%)'
-        url: https://github.com/blinkfox/zealot
-        desc: 一个轻量级的SQL和参数动态生成工具库
-    typora-vue-theme:
-        icon: fa-file-text-o
-        iconBackground: 'linear-gradient(to bottom right, #29B6F6 0%, #1E88E5 100%)'
-        url: https://github.com/blinkfox/typora-vue-theme
-        desc: This is a typora theme inspired by Vue document style.
+        url: https://github.com/tabris233/spider/
+        desc: 一个迁移markdown博文的脚本
+        #    typora-vue-theme:
+        #        icon: fa-file-text-o
+        #        iconBackground: 'linear-gradient(to bottom right, #29B6F6 0%, #1E88E5 100%)'
+        #        url: https://github.com/blinkfox/typora-vue-theme
+        #        desc: This is a typora theme inspired by Vue document style.
 
 # config my skills informations in about page.
 # If you don't want to display this `My Skills` content, you can deactivate or delete this configuration.
@@ -185,24 +185,24 @@ myProjects:
 mySkills:
   enable: true
   data:
-    Java:
+    Algorithms:
       background: 'linear-gradient(to right, #FF0066 0%, #FF00CC 100%)'
-      percent: 85%
-    JavaScript:
+      percent: 65%
+    Data struct:
       background: 'linear-gradient(to right, #9900FF 0%, #CC66FF 100%)'
-      percent: 80%
-    HTML5:
+      percent: 70%
+    python:
       background: 'linear-gradient(to right, #2196F3 0%, #42A5F5 100%)'
-      percent: 80%
-    CSS:
+      percent: 70%
+    C++:
       background: 'linear-gradient(to right, #00BCD4 0%, #80DEEA 100%)'
       percent: 70%
     SQL:
       background: 'linear-gradient(to right, #4CAF50 0%, #81C784 100%)'
-      percent: 90%
+      percent: 50%
     程序设计:
       background: 'linear-gradient(to right, #FFEB3B 0%, #FFF176 100%)'
-      percent: 75%
+      percent: 60%
 
 # config gallery of my photos in about page.
 # If you don't want to display this `Gallery` content, you can deactivate or delete this configuration.
@@ -255,9 +255,9 @@ livere:
 # To use it, activate the configuration item and set appId and appKey.
 # Valine 评论模块的配置，默认为不激活，如要使用，就请激活该配置项，并设置 appId 和 appKey.
 valine:
-  enable: false
-  appId:
-  appKey:
+  enable: true
+  appId: XkeYrd6r1FrJXgASPvPJa9Hp-gzGzoHsz
+  appKey: de9Yfw8ns8xwf6S9eHOj82Wi
   notify: false
   verify: false
   visitor: true
@@ -268,7 +268,7 @@ valine:
 # Whether to display fork me on github icon and link, default true, You can change it to your repo address
 # 配置是否在 header 中显示 fork me on github 的图标，默认为true，你可以修改为你的仓库地址.
 githubLink:
-  enable: true
+  enable: false
   url: https://github.com/blinkfox/hexo-theme-matery
   title: Fork Me
 
@@ -279,7 +279,7 @@ githubLink:
 # 阅读文章的密码验证功能，如要使用此功能请激活该配置项，并在对应文章的Front-matter中写上'password'的键和加密后的密文即可.
 # 请注意：为了保证密码原文不会被泄露到网页中，文章的密码必须是通过'SHA256'加密的，这样就不会被破解.
 verifyPassword:
-  enable: false
+  enable: true
   promptMessage: 请输入访问本文章的密码
   errorMessage: 密码错误，将返回主页！
 
@@ -356,25 +356,3 @@ featureImages:
 - /medias/featureimages/22.jpg
 - /medias/featureimages/23.jpg
 
-  # default configs that the default policy for every articles/posts
-  # default 配置文章的默认转载规则
-
-  # you can define reprint policy for a single article in the front-matter of the specific md file using this key: reprintPolicy
-  # 您可以使用在文章md文件的 front-matter 中指定 reprintPolicy 来给单个文章配置转载规则
-
-  # 可用的转载规则有（available reprint policies are）：
-  # 这些转载规则的意义请参考(you can refer to this link FMI)：https://creativecommons.org/choose/?lang=zh
-  # cc_by（知识共享署名 4.0 国际许可协议 Creative Commons Attribution-NoDerivatives 4.0 International License）
-  # cc_by_nd（知识共享署名-禁止演绎 4.0 国际许可协议 Creative Commons Attribution-NoDerivatives 4.0 International License）
-  # cc_by_sa（知识共享署名-相同方式共享 4.0 国际许可协议 Creative Commons Attribution-ShareAlike 4.0 International License）
-  # cc_by_nc（知识共享署名-非商业性使用 4.0 国际许可协议 Creative Commons Attribution-NoDerivatives 4.0 International License）
-  # cc_by_nc_nd（知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议 Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License）
-  # cc_by_nc_sa（知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议 Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License）
-
-  # cc0（CC0 1.0 通用 (CC0 1.0) 公共领域贡献 CC0 1.0 Universal (CC0 1.0) Public Domain Dedication） https://creativecommons.org/publicdomain/zero/1.0/deed.zh
-
-  # noreprint（不允许转载 not allowed to reprint）
-  # pay（付费转载 pay for reprinting）
-reprint:
-  enable: true # whether enable reprint section 是否启用“转载规则限定模块”
-  default: cc_by
